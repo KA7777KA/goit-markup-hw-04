@@ -96,12 +96,9 @@ letter-spacing: 0.02em;
 }
 .overlay{
     max-width: 1440px;
-    height: 603px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right
-    #2E2F42);
-    background-image:url(../images/people-office.jpg);
+    background-image: linear-gradient(#2E2F42,), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,7 +120,7 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     text-decoration: none;
 }
-.footer .logo{
+.footer .footer-logo{
     display: flex;
     margin-right: 0px;
     margin-bottom: 16px;
@@ -191,7 +188,6 @@ letter-spacing: 0.04em
     color: #FFFFFF;
     background-color: #4D5AE5;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 .button-portfolio:active {
     color:var(--white-color);
@@ -368,6 +364,9 @@ border-radius: 0px 0px 4px 4px;
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.item-list:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 img{
     display: block;
     max-width: 100%;
@@ -387,18 +386,18 @@ img{
 .our-clients{
     display: flex;
 }
-.clients-item{
-        display: flex;
-        margin-right: 24px;
-        width: 170px;
-        height: 92px;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-}
 .clients-item:last-child {
     margin-right: 0;
+}
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 .footer-social {
     margin-left: 70px;
@@ -413,7 +412,18 @@ img{
     color: #FFFFFF;
     margin-bottom: 20px;
 }
-
+.footer-logo{
+    margin-right: 77px;
+        font-family: Raleway;
+        text-decoration: none;
+        color: var(--title-text-color);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
 .footer-social-list {
     display: flex;
 }
@@ -428,12 +438,14 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .team-social-link {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     margin-right: 24px;
-    color: var(--accent-color)
+    background-color: #4D5AE5;
 }
 .team-social {
     display: flex;
@@ -442,4 +454,18 @@ img{
 }
 .social-icon{
     fill: currentColor;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+.footer-social-link{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
